@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Blog Listing Website
 
-## Getting Started
+A stylish and responsive blog listing platform built with **Next.js 15 (App Router)** and **Tailwind CSS v4**. It allows users to add and view blogs using local state and JSON data. Perfect for small projects or demo assignments without a database.
 
-First, run the development server:
+---
+
+## 🔍 Table of Contents
+
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Getting Started](#-getting-started)
+- [Deployment Notes](#-deployment-notes)
+- [Screenshots](#-screenshots)
+- [License](#-license)
+
+---
+
+## ✨ Features
+
+- 🏠 Home page listing all blog posts (title, summary, and date)
+- ➕ Add blog page with form (title, content, date)
+- 📄 Individual blog detail view
+- 💅 Fully responsive design with Tailwind CSS v4
+- ⚡ Fast performance with no backend dependency
+- 🧠 LocalStorage for blog persistence (with fallback to static `blogs.json`)
+
+---
+
+## 🛠 Tech Stack
+
+- **Next.js 15.3.4** (App Router)
+- **React 18.2**
+- **Tailwind CSS v4**
+- **Local Storage** (for blog state)
+- **Vanilla JavaScript (No TypeScript)**
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/blog-listing-website.git
+cd blog-listing-website
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+## 3. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit http://localhost:3000 to see the app.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚀 Deployment Notes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Use Vercel or any Node.js-compatible platform to deploy.
+- Blogs added using the form are saved in localStorage only.
+- Static fallback content comes from src/app/data/blogs.json.
+- Do not attempt to write to blogs.json at runtime in production — file system is read-only.
 
-## Learn More
+## 📸 Screenshots
 
-To learn more about Next.js, take a look at the following resources:
+### 🖥️ Desktop Screenshots
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/c0565e0f-16b1-4ed8-b5bd-eed82da75615" width="30%" />
+  <img src="https://github.com/user-attachments/assets/0a88937c-d03f-4018-9f9d-14ac68748684" width="30%" />
+  <img src="https://github.com/user-attachments/assets/2f74e923-eae3-416d-a5eb-74b3dd06ab1d" width="30%" />
+</div>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📱 Mobile Screenshots
 
-## Deploy on Vercel
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/e5ca3510-913d-4a9e-9d80-0924d3a27079" width="30%" />
+  <img src="https://github.com/user-attachments/assets/e2ee8875-552d-4d89-ad0a-19d63c51aab5" width="30%" />
+  <img src="https://github.com/user-attachments/assets/79993f85-9f19-4733-9c5a-a6f4721f1420" width="30%" />
+</div>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📃 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).  
+You are free to use, copy, modify, and distribute this software for any purpose with proper attribution.
